@@ -14,3 +14,20 @@
     const anotherId = Symbol('123')
 
     console.log(Id === anotherId);
+
+   // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   // stack  for (Primitive data types) copy of data , Heap (Non-Primitive) refrance of value
+
+   let userOne ={
+    email : "Rahulkatara@gmail.com",
+    upi : "userOne@bly"
+   }
+
+   let userTwo = userOne
+
+   userTwo.email="kataraRahul@gmail.conm"
+
+   console.log(userOne.email);
+   console.log(userTwo.email);
+
