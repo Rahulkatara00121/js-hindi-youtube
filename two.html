@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | chai with code</title>
+    <style style="color: powderblue;">
+         .day
+    </style>
+</head>
+<body style="background-color: darkmagenta;">
+
+    <div style="background-color: #5d4646;" class="parent"  >
+          <div class="day">Monday</div>
+          <div class="day">Tuesday</div>
+          <div class="day">Wednesday</div>
+          <div class="day">thusday</div>
+          
+    </div>
+
+    <script>
+        const ScriptOfParent = document.querySelector('.parent');
+        console.log(ScriptOfParent)
+        console.log(ScriptOfParent.children[1].innerHTML) 
+    
+
+        for(let i=0; i<ScriptOfParent.children.length; i++){
+         //console.log(ScriptOfParent.children[i].innerHTML) 
+        }
+        ScriptOfParent.children[2].style.color = "red"
+        console.log("node: ", ScriptOfParent.childNodes)
+    </script>
+    
+</body>
+</html>
