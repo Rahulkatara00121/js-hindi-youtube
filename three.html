@@ -12,8 +12,15 @@
 
 <script>
     const div = document.createElement('div')
-    console.log(div);
+    
     div.className = "main"
     div.id = Math.round(Math.random() *10) + 1
+
+    div.setAttribute("title","setTitle by Attribute")
+    console.log(div);
+    // div.innerText = "div manipulate"   // this is not effciant this override value
+    const addtesxt = document.createTextNode("chai with code")
+    div.appendChild(addtesxt)
+    document.body.appendChild(div)
 </script>
 </html>

@@ -31,4 +31,4 @@ const chai = ()=>{
 
 ((name)=> {
     console.log(`Arrow Funtion used for  IIfe ${name}`);
-}) ('kingo')xx
+}) ('kingo')

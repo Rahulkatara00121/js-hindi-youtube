@@ -16,6 +16,6 @@ const books = [
 //     return bk.genre === 'Fiction'}  )
 
 // console.log(fictionBooks);
-const fictionBooks = books.map( (bk)=> bk.pages  350 )
+const fictionBooks = books.map( (bk) => bk.pages < 350)
 
 console.log(fictionBooks);
